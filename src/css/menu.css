@@ -1,0 +1,56 @@
+:root {
+    --size: 10vh;
+}
+
+.menu {
+    height: var(--size);
+    display: grid;
+    overflow: hidden;
+    grid-template: 150px / 15% 70% 15%;
+    color: #fff;
+}
+
+.main {
+    height: var(--size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 0 1vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main li {
+    position: relative;
+}
+
+.iconify {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.line {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    transition: 500ms ease;
+}
+
+.li:hover .line {
+    width: 80%;
+}
